@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/pokebola.ico">
+    <title>Find - Pokemon</title>
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/common.css"> 
+    <link href="https://getbootstrap.com/docs/5.3/examples/sign-in/sign-in.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <main id="app" class="form-signin w-100 m-auto">
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Find Your Pokemon</h1>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingPassword" v-model="name" placeholder="Password">
+                <label for="floatingPassword">Pokemon</label>
+            </div>
+
+            <input type="button" class="w-100 btn btn-lg btn-warning btn_search" v-on:click="findPokemon" value="Search" />
+        </form>
+        <div id="canvas"></div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
