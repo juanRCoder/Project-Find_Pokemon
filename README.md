@@ -1,4 +1,4 @@
-# Find your Pokemon 🚀
+# Find Pokemon 🚀
 ![Page main of the project](images/Project.jpeg)
 
 ## Description 📝:
